@@ -42,23 +42,34 @@ public class Main {
         System.out.println();
     }
     public static void primeNumbers(){
-        System.out.print("First 10 Prime Numbers: ");
-        int n=0;
-        int b=0;
-        while (n <=29){
-            n++;
-            b = n%2;
-            if (b!= 0){
-            }else {
-                if (n-1==1){
-                    System.out.print(2+ " ");
-                }else {
-                    System.out.print(n - 1 + " ");
+       int x=0;
+       System.out.print("First 10 Prime Numbers: ");
+        while(x<30){
+
+            if (2==x){
+                System.out.print(x+ " ");
+            }
+            if (3==x){
+                System.out.print(x+ " ");
+            }
+            if (5==x){
+                System.out.print(x+ " ");
+            }
+            if (!(x==1)) {
+                if (!(x % 2 == 0)) {
+                    if (!(x % 3 == 0)) {
+                        if (!(x % 5 == 0))
+                            System.out.print(x+ " ");
+
+                    }
                 }
             }
+            x=x+1;
         }
         System.out.println(" ");
+
     }
+
 
     public static void triangleNumbers(){
         z=1;
